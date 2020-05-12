@@ -1,0 +1,32 @@
+header{
+    .navbar-menu{
+        height: 70px;
+    }
+    .navbar-brand{
+        color: #000000 !important;
+        font-weight: 500;
+        font-size: 32px;
+    }
+    .navbar-collapse{
+        ul{
+            li{
+                a{
+                    color: $black !important;
+                    font-size: 16px;
+                    display: inline-block;
+                    padding: 15px 20px;
+                    margin-right: 20px;
+                    text-decoration: none;
+                    transition: all 0.3s ease-in-out;
+                    @include media-breakpoint-down(md){
+                        font-size: 14px;
+                    }
+                    &:hover{
+                        color: $theme-color !important;
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}

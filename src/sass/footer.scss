@@ -1,0 +1,36 @@
+.footer-area{
+    padding: 60px 0;
+    .col-lg-12{
+        @include media-breakpoint-down(xs){
+            display: inline-block;
+        }
+        a{
+            padding: 20px;
+            width: 60px;
+            height: 60px;
+            margin: 10px;
+            transition: 1s;
+            @include media-breakpoint-down(xs){
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            i{
+                font-size: 20px;
+                color: $black;
+            }
+        }
+    }
+    .copyright-text{
+        margin: 0 auto;
+        span{
+            font-size: 16px;
+            color: gray;
+            font-weight: 400;
+            line-height: 1.4;
+            transition: .3s all ease-in-out;
+        }
+    }
+}

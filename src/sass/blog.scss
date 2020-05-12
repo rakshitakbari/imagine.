@@ -1,0 +1,16 @@
+#blog{
+    padding: 60px 0;
+    @include media-breakpoint-down(md){
+        padding: 30px 0;
+    } 
+    .blog-details{
+        h2{
+            font-size: 23px;
+            line-height: 1.3;
+            color: $black;
+            font-weight: 600;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+    }
+}

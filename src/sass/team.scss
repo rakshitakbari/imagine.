@@ -1,0 +1,76 @@
+#team{
+    padding: 60px 0;
+    @include media-breakpoint-down(md){
+        padding: 30px 0;
+    } 
+    .team-space{
+        .img-social{
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+            margin-bottom: 30px;
+            img{
+                transition: .3s all ease-in-out;
+            }
+            &:hover{
+                img{
+                    transition: .3s all ease-in-out;
+                    -webkit-transform: scale(1.05);
+                    -ms-transform: scale(1.05);
+                    transform: scale(1.05);
+                }
+                .social{
+                    bottom: 0;
+                    -webkit-transform: translateY(0%);
+                    -ms-transform: translateY(0%);
+                    transform: translateY(0%);
+                }
+            }
+        }
+        .social {
+            z-index: 2;
+            padding: 10px 0;
+            width: 100%;
+            position: absolute;
+            bottom: 0%;
+            -webkit-transform: translateY(100%);
+            -ms-transform: translateY(100%);
+            transform: translateY(100%);
+            left: 0;
+            -webkit-transition: .3s all ease;
+            -o-transition: .3s all ease;
+            transition: .3s all ease;
+            background: $theme-color;
+            a {
+                display: inline-block;
+                padding: 5px;
+                color: $white;
+            }
+        }
+        .team-deatils{
+            h2{
+                font-size: 18px;
+                color: $black;
+                margin-bottom: 12px;
+                font-weight: 500;
+                line-height: 1.2;
+            }
+            .sub-title {
+                display: block;
+                text-transform: uppercase;
+                letter-spacing: .1em;
+                font-size: 12px;
+                font-weight: 700;
+                color: $theme-color;
+                margin-bottom: 10px;
+            } 
+            p{
+                font-size: 16px;
+                color: gray;
+                line-height: 1.7;
+                font-weight: 400;
+                margin-bottom: 1rem;
+            }   
+        }
+    }
+}
